@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Nacionalidade</title>
+    <style>
+        body {
+            background-color: #00388c;
+            font: normal 1em Arial;
+        }
+        #container {
+            background-color: #d7e7ff;
+            border-color: aqua;
+            border-width: 2px;
+            border-style: solid;
+            width: 400px;
+            height: 150px;
+            margin: auto;
+            margin-top: 100px;
+            padding: 20px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 2px 2px 11px 0px #00000085;
+        }
+        input[type="text"]::placeholder {
+            font-style: italic;
+        }
+        input[type="text"] {
+            height: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h2>Em qual país você nasceu?</h2>
+        <input type="text" placeholder="Brasil">
+        <button type="submit" onclick="checkNacionality()">Enviar</button>
+        <div id="res"></div>
+    </div>
+    <script>
+        function checkNacionality() {
+            var country = document.querySelector('input[type="text"]').value
+            var res = document.getElementById('res')
+            var nation = null
+            
+            if (country == 'Brasil') {
+                nation = 'brasileiro'
+            } else {
+                nation = 'estrangeiro'
+            }
+
+            res.innerHTML = `<p>Você é <strong>${nation}</strong></p>`
+        }
+    </script>
+</body>
+</html>
