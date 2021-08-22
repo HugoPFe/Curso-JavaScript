@@ -30,3 +30,37 @@ section > input[type="number"] {
 section > input[type="number"]::-webkit-inner-spin-button {
     display: none;
 }
+
+section > button[type="submit"] {
+    background-color: #084f9e;
+    font-size: 1.1em;
+    color: white;
+    width: 90px;
+    height: 40px;
+    border-style: none;
+    border-radius: 5px;
+    box-shadow: 1px 1px 4px #0000008a;
+    animation: decrease 0.2s;
+    animation-fill-mode: forwards;
+
+}
+
+section > button[type="submit"]:hover {
+    background-color: #297bd5;
+    animation: growup 0.2s;
+    animation-fill-mode: forwards;
+}
+
+section > button[type="submit"]:active {
+    background-color: #002855;
+}
+
+@keyframes growup {
+    0% {width: 90px; height: 40px;}
+    100% {width: 95px; height: 45px;}
+}
+
+@keyframes decrease {
+    0% {width: 95px; height: 45px;}
+    100% {width: 90px; height: 40px;}
+}
