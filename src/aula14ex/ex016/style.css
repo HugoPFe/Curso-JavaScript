@@ -21,23 +21,3 @@ section {
     border-radius: 10px;
     box-shadow: 1px 1px 6px #00000052;
 }
-
-div {
-    display: inline-block;
-    width: 250px;
-    height: 200px;
-}
-
-div#res {
-    position: absolute;
-}
-
-label {
-    clear: left;
-    width: 90px;
-}
-
-input {
-    display: block;
-    margin-bottom: 10px;
-}

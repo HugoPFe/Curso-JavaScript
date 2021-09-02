@@ -13,9 +13,18 @@
     </header>
     <section>
         <div>
-            <label for="inputStart">Início:</label><input type="number" name="inputStart" id="inputStart" value="1">
-            <label for="inputEnd">Fim:</label><input type="number" name="inputEnd" id="inputEnd" value="2">
-            <label for="inputStep">Passo:</label><input type="number" name="inputStep" id="inputStep" value="1">
+            <p>
+                Início:
+                <input type="number" name="inputStart" id="inputStart" value="1">
+            </p>
+            <p>
+                Fim:
+                <input type="number" name="inputEnd" id="inputEnd" value="10">
+            </p>
+            <p>
+                Passo:
+                <input type="number" name="inputStep" id="inputStep" value="1" min="1">
+            </p>
             <button type="submit" onclick="count()">Contar</button>
         </div>
         <div id="res"></div>
