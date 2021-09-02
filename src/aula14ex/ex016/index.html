@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vamos contar!</h1>
+    </header>
+    <section>
+        <div>
+            <label for="inputStart">Início:</label><input type="number" name="inputStart" id="inputStart" value="1">
+            <label for="inputEnd">Fim:</label><input type="number" name="inputEnd" id="inputEnd" value="2">
+            <label for="inputStep">Passo:</label><input type="number" name="inputStep" id="inputStep" value="1">
+            <button type="submit" onclick="count()">Contar</button>
+        </div>
+        <div id="res"></div>
+    </section>
+    <footer>
+        <p>GitHub: <a href="https://www.github.com/HugoPFe" target="_blank">HugoPFe</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
