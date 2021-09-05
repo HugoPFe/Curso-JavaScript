@@ -15,9 +15,15 @@ section {
     background-color: white;
     color: black;
     width: 500px;
+    height: 300px;
     margin: auto;
     margin-top: 10px;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 1px 1px 6px #00000052;
+}
+
+div {
+    width: 40%;
+    height: 40%;
 }
