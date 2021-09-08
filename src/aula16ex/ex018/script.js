@@ -24,6 +24,9 @@ function addValue() {
     optValue.text = `Valor ${number} adicionado à lista.`
     optValue.value = `v${numbers.length}`
     slctNumbers.add(optValue)
+
+    inptNumber.value = ''
+    inptNumber.focus()
 }
 
 function analyze() {
